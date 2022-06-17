@@ -1,0 +1,11 @@
+- hosts: TP2WPs
+  gather_facts: False
+  become: true
+  vars_files:
+    - vars/default.yml
+  roles:
+    - mysql
+    - apache
+    - php
+    - wordpress
+
